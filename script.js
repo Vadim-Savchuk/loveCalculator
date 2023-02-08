@@ -37,7 +37,7 @@ form.addEventListener('submit', async function (event) {
                 </div>`
 
             // Чищу Інпути
-            inputManName.value = '';
+            inputManName.value   = '';
             inputWomanName.value = '';
 
         } catch (e) {
