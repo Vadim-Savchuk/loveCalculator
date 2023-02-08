@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор кохання</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico"/>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="container">
+
+            <!-- Меню -->
+            <div class="menu">
+                <div class="info-btn">i</div>
+                <div class="info">
+                    <p>Для кращого результату вводте повні іменна.</p>
+                    <hr>
+                    <p>Результат не варто сприймати як дійсне.</p>
+                </div>
+            </div>
+
+            <!-- Логотип -->
+            <div class="logo-offer">
+                <img class="logo" src="./img/hero-img/logo.png" alt="logo">
+                <p class="logo-text"><span>Кахай</span> <span>чи</span> <span>к</span></p>
+            </div>
+
+            <!-- Інпути -->
+            <form class="form">
+
+                <label class="man" for="name-men">Ім'я хлопця</label>
+                <input id="name-men" class="name mi" type="text" placeholder="Анатолій">
+
+                <label class="women" for="name-women">Ім'я дівчини</label>
+                <input id="name-women" class="name you" type="text" placeholder="Валентина">
+
+                <button class="btn">Розрахувати</button>
+            </form>
+
+            <!-- Результат -->
+            <div class="result-offer"></div>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Itim', cursive;
+    background: linear-gradient(243.61deg, #BC32FD 19.23%, #323AFD 91.15%);
+}
+
+.app {
+    max-width: 390px;
+    margin: 50px auto;
+    padding: 50px 15px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+@media (max-width: 430px) {
+    .app {
+        max-width: 90%;
+    }
+}
+
+.container {
+    max-width: 360px;
+    margin: 0 auto;
+
+}
+
+/* Меню============================= */
+.menu{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    position: relative;
+    justify-content: end;
+}
+
+/* Текст попередження_______________ */
+.info-btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: #e07cba;
+}
+
+.info-btn:hover ~ .info{
+    opacity: 1;
+    visibility: visible;
+}
+
+.info{
+    top: -10px;
+    left: 10px;
+    width: 80%;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+    position: absolute;
+    border-radius: 25px;
+    background-color: #3c9cde;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.info p {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e07cba;
+}
+
+/* Лого================================ */
+.logo-offer {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.logo-text {
+    display: flex;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 10px;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(69, 69, 206);
+}
+
+/* Інпути================================ */
+label{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+.name {
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.name::placeholder {
+    opacity: 0.7;
+    color: white;
+}
+
+.mi {
+    margin-bottom: 10px;
+    background-color: #3c9cde;
+}
+
+.you {
+    background-color: #e07cba;
+}
+
+.btn {
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    margin: 30px 0px 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: linear-gradient(243.61deg, #e07cba 50.23%, #3c9cde 50.50%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.btn:hover {
+    background: linear-gradient(243.61deg, #e07cba 0%, #3c9cde 100%);
+}
+
+/* Результат================================= */
+.result {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.result-names {
+    font-size: 22px;
+    color: #3c9cde;
+}
+
+.man {
+    color: #3c9cde;
+}
+
+.women {
+    color: #e07cba;
+}
+
+.result-percentages {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 0px;
+
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes blink {
+    0% {
+        color: #3c9cde;
+    }
+
+    10% {
+        color: #e07cba;
+    }
+
+    20% {
+        color: #3c9cde;
+    }
+
+    30% {
+        
+        color: #e07cba;
+    }
+
+    40% {
+        color: #3c9cde;
+    }
+
+    50% {
+        color: #e07cba;
+    }
+
+    60% {
+        color: #3c9cde;
+    }
+
+    70% {
+        color: #e07cba;
+    }
+
+    80% {
+        color: #3c9cde;
+    }
+
+    90% {
+        color: #e07cba;
+    }
+
+    100% {
+        color: #3c9cde;
+    }
+}
+
+.result-percentages-img{
+    margin: 10px 0px;
+}
+
+.result-text {
+    font-size: 25px;
+    color: #e07cba;
+}
